@@ -1,0 +1,169 @@
+#rectangle {
+    float: left;
+    height: 60em;
+    width: 15em;
+    background-color: #636487;
+    position: absolute;
+    left: -500px;
+    transition: 1s linear;
+}
+.open {
+    left: 0% !important;
+}
+/*.animation{
+    animation: rectangleTransition 1s ease-in;
+    animation-fill-mode: forwards;
+}
+    @keyframes rectangleTransition {
+        0% {
+            left: -200px;
+        }
+        100% {
+            left: -5px;
+        }
+    }
+.animationOut{
+    animation: rectangleTransitionOut 1s ease-out;
+    animation-fill-mode: forwards;
+}
+        @keyframes rectangleTransitionOut {
+            0% {
+                left: -5px;
+            }
+            100% {
+                left: -250px;
+            }
+        }*/
+/*rectangle region ends here*/
+
+button {
+    display: inline;
+    float: left;
+    border: none;
+    width: 8%;
+    height: 10em;
+    background-color: #2f2f45;
+    cursor: pointer;
+    position: absolute;
+    transition: 1s linear;
+}
+.openButton {
+    left: 0% !important;
+}
+/*.buttonAnimation{
+    animation: buttonTransition 1s ease-in;
+    animation-fill-mode: forwards;
+}
+    @keyframes buttonTransition {
+        0% {
+            left: 0px;
+        }
+        100% {
+            left: 235px;
+        }
+    }
+/*.buttonAnimationOut {
+    animation: buttonTransitionOut .9s ease-out;
+    animation-fill-mode: forwards;
+}
+    @keyframes buttonTransitionOut {
+        0% {
+            left: 235px;
+        }
+        100% {
+            left: 0px;
+        }
+    }
+/*button region ends here*/
+
+.line {
+    border: 10px solid;
+    border-color: #dadae8;
+    margin: 1em 2em;
+} 
+.topLineAnimation {
+    animation: rotateTop .1s ease-in;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+    @keyframes rotateTop {
+        0% {
+            transform: rotate(0deg) translate(0px, 2px);
+        }
+        100% {
+            transform: rotate(45deg) translate(20px, 27px);
+            
+        }
+    }
+/*.topLineAnimationOut {
+    animation: rotateTopOut .1s ease-in;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+    @keyframes rotateTopOut {
+        0% {
+            transform: rotate(45deg) translate(20px, 27px);
+        }
+        100% {
+            transform: rotate(0deg) translate(0px, 2px);
+            
+        }
+    }*/
+.middleLineAnimation {
+    animation: middleDisappear .1s ease-in;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+    @keyframes middleDisappear {
+        0% {
+            opacity: 100%;
+        }
+        100% {
+            opacity: 0%;
+        }
+    }
+/*.middleLineAnimationOut {
+    animation: middleReappear .1s ease-in;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+    @keyframes middleReappear {
+        0% {
+            opacity: 0%;
+        }
+        100% {
+            opacity: 100%;
+        }
+    }*/
+.bottomLineAnimation {
+    animation: rotateBottom .1s ease-in;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+    @keyframes rotateBottom {
+        0% {
+            transform: rotate(0deg) translate(0px, -2px);
+            top: 0px;
+        }
+        100% {
+            transform: rotate(-45deg) translate(20px, -27px);
+            top: 45px;
+        }
+    }
+.bottomLineAnimationOut {
+    animation: rotateBottomOut .1s ease-in;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+@keyframes rotateBottomOut {
+    0% {
+        transform: rotate(-45deg) translate(20px, -27px);
+        top: 45px;
+    }
+    100% {
+        transform: rotate(0deg) translate(0px, -2px);
+        top: 0px;
+    }
+}
+/*line region ends here*/
