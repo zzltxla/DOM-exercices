@@ -3,37 +3,14 @@
     height: 60em;
     width: 15em;
     background-color: #636487;
-    position: absolute;
-    left: -500px;
-    transition: 1s linear;
+    position: relative;
+    left: -12%;
+    transition: .3s linear;
 }
 .open {
     left: 0% !important;
 }
-/*.animation{
-    animation: rectangleTransition 1s ease-in;
-    animation-fill-mode: forwards;
-}
-    @keyframes rectangleTransition {
-        0% {
-            left: -200px;
-        }
-        100% {
-            left: -5px;
-        }
-    }
-.animationOut{
-    animation: rectangleTransitionOut 1s ease-out;
-    animation-fill-mode: forwards;
-}
-        @keyframes rectangleTransitionOut {
-            0% {
-                left: -5px;
-            }
-            100% {
-                left: -250px;
-            }
-        }*/
+
 /*rectangle region ends here*/
 
 button {
@@ -44,36 +21,13 @@ button {
     height: 10em;
     background-color: #2f2f45;
     cursor: pointer;
-    position: absolute;
-    transition: 1s linear;
+    position: relative;
+    left: -14%;
+    transition: .3s linear;
 }
 .openButton {
     left: 0% !important;
 }
-/*.buttonAnimation{
-    animation: buttonTransition 1s ease-in;
-    animation-fill-mode: forwards;
-}
-    @keyframes buttonTransition {
-        0% {
-            left: 0px;
-        }
-        100% {
-            left: 235px;
-        }
-    }
-/*.buttonAnimationOut {
-    animation: buttonTransitionOut .9s ease-out;
-    animation-fill-mode: forwards;
-}
-    @keyframes buttonTransitionOut {
-        0% {
-            left: 235px;
-        }
-        100% {
-            left: 0px;
-        }
-    }
 /*button region ends here*/
 
 .line {
@@ -96,20 +50,6 @@ button {
             
         }
     }
-/*.topLineAnimationOut {
-    animation: rotateTopOut .1s ease-in;
-    animation-duration: .5s;
-    animation-fill-mode: forwards;
-}
-    @keyframes rotateTopOut {
-        0% {
-            transform: rotate(45deg) translate(20px, 27px);
-        }
-        100% {
-            transform: rotate(0deg) translate(0px, 2px);
-            
-        }
-    }*/
 .middleLineAnimation {
     animation: middleDisappear .1s ease-in;
     animation-duration: .5s;
@@ -123,19 +63,6 @@ button {
             opacity: 0%;
         }
     }
-/*.middleLineAnimationOut {
-    animation: middleReappear .1s ease-in;
-    animation-duration: .5s;
-    animation-fill-mode: forwards;
-}
-    @keyframes middleReappear {
-        0% {
-            opacity: 0%;
-        }
-        100% {
-            opacity: 100%;
-        }
-    }*/
 .bottomLineAnimation {
     animation: rotateBottom .1s ease-in;
     animation-duration: .5s;
@@ -151,6 +78,8 @@ button {
             top: 45px;
         }
     }
+/*open animations region ends here*/
+
 .bottomLineAnimationOut {
     animation: rotateBottomOut .1s ease-in;
     animation-duration: .5s;
@@ -166,4 +95,31 @@ button {
         top: 0px;
     }
 }
+.topLineAnimationOut {
+    animation: rotateTopOut .1s ease-in;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+        @keyframes rotateTopOut {
+        0% {
+            transform: rotate(45deg) translate(20px, 27px);
+        }
+        100% {
+            transform: rotate(0deg) translate(0px, 2px);
+        }
+        }
+.middleLineAnimationOut {
+    animation: middleAppear .1s ease-in;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+        @keyframes middleAppear {
+            0% {
+                opacity: 0%;
+            }
+            100% {
+                opacity: 100%;
+            }
+        }
+/*close animations region ends here*/
 /*line region ends here*/
